@@ -5,12 +5,8 @@ import AlertButton from '@/components/ui/alertButton';
 
 export default function About() {
   return (
-    <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <main className="flex-1 grid items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <div className="grid gap-5">
-            <div className="flex gap-5">
-                <Link href="/about" className="underline">About</Link>
-                <Link href="/contact" className="underline">Contact</Link>
-            </div>
             <div className="heading1 text-center">
                 Home
             </div>
@@ -22,6 +18,6 @@ export default function About() {
               <AlertButton className="bg-gradient-to-r from-orange-500 bg-orange-600 rounded-4xl" text='Contact' alertMessage="Click the contact link instead."></AlertButton>
             </div>
         </div>
-    </div>
+    </main>
   );
 }

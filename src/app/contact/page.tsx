@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <main className="flex-1 min-w-full grid items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <div>
             <div className="flex gap-3">
                 <Link href="/" className="text-gray-400 flex gap-3">
@@ -16,13 +16,13 @@ export default function Contact() {
             </div>
             <div className="paragraph1 text-center">
                 <div>
-                  me@fisherbit.llc
+                  <span className="font-bold">Email: </span>me@fisherbit.llc
                 </div>
                 <div>
-                  +1 (908) 300-0314
+                  <span className="font-bold">Phone Number: </span>+1 (908) 300-0314
                 </div>
             </div>
         </div>
-    </div>
+    </main>
   );
 }
